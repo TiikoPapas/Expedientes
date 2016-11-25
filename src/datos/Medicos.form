@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="cia?zeroDateTimeBehavior=convertToNullPU"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.persistence.Query" name="query">
+      <Properties>
+        <Property name="query" type="java.lang.String" value="SELECT m FROM Medico_1 m"/>
+        <Property name="entityManager" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$EMProperty$EntityManagerEditor">
+          <ComponentRef name="entityManager"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="list">
+      <Properties>
+        <Property name="query" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$QueryBeanProperty$QueryEditor">
+          <ComponentRef name="query"/>
+        </Property>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;datos.Medico_1&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="toolTipText" type="java.lang.String" value="Formulario de M&#xe9;dicos"/>
+    <Property name="name" type="java.lang.String" value="Foromulario de M&#xe9;dicos" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="cmdNuevo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmdBorrar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmdActua" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmdGuardar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblId" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAPater" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAMater" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblEspec" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCedula" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtId" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtNomb" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtAPater" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtAMater" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtEsp" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCedula" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="masterScrollPane" pref="670" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="lblLista" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="cmdConfir" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblIdent" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cmbLista" min="-2" pref="244" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblIdent" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbLista" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="cmdConfir" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="1" min="-2" pref="61" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblLista" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="masterScrollPane" min="-2" pref="146" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtId" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNomb" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEspec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEsp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCedula" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCedula" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="1"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cmdGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdActua" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdBorrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="mstbleMedico">
+          <BindingProperties>
+            <BindingProperty name="elements" source="list" target="mstbleMedico" targetPath="elements" updateStrategy="0" immediately="false">
+              <Subbinding sourcePath="${idMedico}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="0"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${MNombre}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="1"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${MAPaterno}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="2"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${MAMaterno}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="3"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${especialidad}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="4"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${cedula}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="5"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+            </BindingProperty>
+          </BindingProperties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblId">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Id Medico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNombre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAPater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAMater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEspec">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Especialidad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCedula">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xe9;dula Profesional:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtId">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.idMedico}" target="txtId" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtId" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNomb">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.MNombre}" target="txtNomb" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtNomb" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAPater">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.MAPaterno}" target="txtAPater" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtAPater" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAMater">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.MAMaterno}" target="txtAMater" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtAMater" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEsp">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.especialidad}" target="txtEsp" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtEsp" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCedula">
+      <BindingProperties>
+        <BindingProperty name="text" source="mstbleMedico" sourcePath="${selectedElement.cedula}" target="txtCedula" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="txtCedula" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdGuardar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registrar nuevo m&#xe9;dico"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdGuardarActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdActua">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Actualizar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdActuaActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdNuevo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nuevo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdNuevoActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdBorrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Borrar"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="enabled" source="mstbleMedico" sourcePath="${selectedElement != null}" target="cmdBorrar" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdBorrarActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblIdent">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Seleccione su identidad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbLista">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cmbListaMousePressed"/>
+        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="cmbListaPropertyChange"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdConfir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Confirmar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdConfirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLista">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lista de m&#xe9;dicos regristrados:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtConfir">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

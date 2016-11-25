@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="cia?zeroDateTimeBehavior=convertToNullPU"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.persistence.Query" name="query">
+      <Properties>
+        <Property name="query" type="java.lang.String" value="SELECT p FROM Paciente_1 p"/>
+        <Property name="entityManager" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$EMProperty$EntityManagerEditor">
+          <ComponentRef name="entityManager"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="list">
+      <Properties>
+        <Property name="query" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$QueryBeanProperty$QueryEditor">
+          <ComponentRef name="query"/>
+        </Property>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;datos.Paciente_1&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JMenuBar" name="jMenuBar1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="jMenuBar2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="jMenuBar3">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="jMenuBar4">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+    </Container>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="lblCod" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtCod" min="-2" pref="133" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblTipo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmbTipo" min="-2" pref="133" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblAnte" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAMater" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNombre" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAPater" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+                                      <Component id="lblFecha" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtAMater" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblDirec" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtAPater" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblEdad" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="txtNombre" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtEdad" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="txtFecha" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtDirec" min="-2" pref="111" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblActual" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblTele" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtTele" min="-2" pref="100" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblCardio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="txtCardio" min="-2" pref="57" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblRespi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSisto" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtSisto" min="-2" pref="57" max="-2" attributes="0"/>
+                                  <Component id="txtRespi" min="-2" pref="57" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblDias" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtDias" min="-2" pref="57" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblTemp" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="temperaturaField" min="-2" pref="57" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="txtExp" alignment="0" pref="452" max="32767" attributes="0"/>
+                              <Component id="txtAnte" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="lblExp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDiag" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblTrata" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGabi" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtActual" min="-2" pref="452" max="-2" attributes="0"/>
+                          <Component id="txtGabi" min="-2" pref="452" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="txtEvo" alignment="0" pref="452" max="32767" attributes="0"/>
+                              <Component id="txtDiag" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="lblEvolu" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblMedi" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTrata" min="-2" pref="452" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblMNomb" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtMNomb" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblMAPater" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblEspe" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtEspe" min="-2" pref="88" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtMAPater" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblMAMater" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtMAMater" min="-2" pref="88" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblCedu" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtCedu" min="-2" pref="88" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="cmdNuevo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmdBorrar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cmdGuardar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDirec" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTele" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTele" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="lblAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDirec" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="txtFecha" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAnte" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblActual" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblCardio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCardio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDias" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDias" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="lblRespi" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtRespi" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblTemp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="temperaturaField" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblSisto" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSisto" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtAnte" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="txtActual" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblExp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblGabi" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtExp" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
+                  <Component id="txtGabi" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDiag" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTrata" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtDiag" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="txtTrata" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCod" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCod" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmbTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEvolu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMedi" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtEvo" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblMNomb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMNomb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMAPater" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMAMater" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEspe" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEspe" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCedu" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCedu" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cmdGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdBorrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblNombre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAPater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAMater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblFecha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha de nacimiento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEdad">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDirec">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Direccion:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTele">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telefono:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAnte">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Antecedentes personales patol&#xf3;gicos:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCardio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Frecuencia Cardiaca:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblRespi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Frecuencia Respiratoria:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSisto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Presi&#xf3;n Sist&#xf3;lica:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDias">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Presi&#xf3;n Diast&#xf3;lica:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTemp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Temperatura:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblActual">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Padecimiento actual:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exploraci&#xf3;n F&#xed;sica:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEvolu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Evolucion:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblGabi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Estudios de gabinete:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDiag">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Diagnostico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTrata">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tratamiento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCod">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo de diagn&#xf3;stico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTipo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tipo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNombre">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAPater">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAMater">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFecha">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEdad">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDirec">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTele">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAnte">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCardio">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtRespi">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSisto">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDias">
+    </Component>
+    <Component class="javax.swing.JTextField" name="temperaturaField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtActual">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtExp">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEvo">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtGabi">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDiag">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTrata">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCod">
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdGuardar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar expediente"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdGuardarActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdNuevo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nuevo Expediente"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdNuevoActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdBorrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Borrar expediente"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdBorrarActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbTipo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Consulta"/>
+            <StringItem index="1" value="Urgencia"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMedi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe9;dico que atendi&#xf3;:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMNomb">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMNomb">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMAPater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Paterno: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMAPater">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMAMater">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Apellido Materno: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMAMater">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEspe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Especialidad: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEspe">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCedu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cedula profesional: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCedu">
+    </Component>
+  </SubComponents>
+</Form>
