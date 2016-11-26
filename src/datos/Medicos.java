@@ -18,7 +18,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.RollbackException;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -26,16 +25,18 @@ import javax.swing.JPanel;
  * @author tiiko
  */
 public class Medicos extends JPanel {
-    
-//    null //private
-//            public String nomb;
+
+//    MedicoDatos medi = new MedicoDatos();
+//    String nomb = medi.getNombre();
 
     public Medicos() {
+
         initComponents();
         if (!Beans.isDesignTime()) {
             entityManager.getTransaction().begin();
         }
         cargarBD();
+
     }
 
     /**
@@ -323,6 +324,9 @@ public class Medicos extends JPanel {
         }
 
         public void mouseReleased(java.awt.event.MouseEvent evt) {
+            if (evt.getSource() == cmbLista) {
+                Medicos.this.cmbListaMouseReleased(evt);
+            }
         }
 
         public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -381,17 +385,17 @@ public class Medicos extends JPanel {
     }//GEN-LAST:event_cmdGuardarActionPerformed
 
     private void cmdConfirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdConfirActionPerformed
-        
+
 //        String pass = JOptionPane.showInputDialog(this, "Introduzca contraseña");
 //        JOptionPane.showMessageDialog(null, pass);
-        
+        consultas();
         JFrame frame = new JFrame();
-                frame.setContentPane(new Paciente());
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.pack();
-                frame.setVisible(true);
-       setVisible(false);
-        
+        frame.setContentPane(new Paciente());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+        setVisible(true);
+
     }//GEN-LAST:event_cmdConfirActionPerformed
 
     private void cmbListaPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_cmbListaPropertyChange
@@ -399,8 +403,13 @@ public class Medicos extends JPanel {
     }//GEN-LAST:event_cmbListaPropertyChange
 
     private void cmbListaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cmbListaMousePressed
-        consultas();
+    //    consultas();
     }//GEN-LAST:event_cmbListaMousePressed
+
+    private void cmbListaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cmbListaMouseReleased
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_cmbListaMouseReleased
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -491,47 +500,47 @@ public class Medicos extends JPanel {
 
     }
 
-    public void consultas(){
+    String nomb;
     
-    try {
+    public void consultas() {
+
+        try {
             // combo = mAPaterno
-            String nombre = (String) cmbLista.getSelectedItem();
+            String comboNomb = (String) cmbLista.getSelectedItem();
             // Conexión a la base de datos
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/cia", "root", "sdf3s2gg");
             Class.forName("com.mysql.jdbc.Driver");
             // Consultas
-            ResultSet rNomb = st.executeQuery("select * from medico where mAPaterno like " + "'" + nombre + "';");
-            rNomb.next();
-            nomb = rNomb.getString("mNombre");
-            String aPater = rNomb.getString("mAPaterno");
-            String aMater = rNomb.getString("mAMaterno");
-            String espe = rNomb.getString("especialidad");
-            String cedu = rNomb.getString("cedula");
+            ResultSet rs = st.executeQuery("select * from medico where mAPaterno like " + "'" + comboNomb + "';");
+            rs.next();
+            Paciente paci = new Paciente();
+            
+            nomb = rs.getString("mNombre");
+            
+            paci.mDatos[0] = nomb;
+            
+            String aPater = rs.getString("mAPaterno");
+            paci.nombre = nomb;
+            paci.mDatos[1] = aPater;
+            
+            String aMater = rs.getString("mAMaterno");
+            paci.mDatos[2] = aMater;
+            
+            String espe = rs.getString("especialidad");
+            paci.mDatos[3] = espe;
+            
+            String cedu = rs.getString("cedula");
+            paci.mDatos[4] = cedu;
+            
             String espacio = " ";
             String salto = "\n";
+
             // Se envían las consultas al text area
-            txtConfir.setText(nomb + espacio + aPater + espacio + aMater 
-                    +  salto + espe + salto + cedu);
-           
-           
-//            String[] mDatos = new String[5];
-//            mDatos[0] = nomb;
-//            mDatos[1] = aPater;
-//            mDatos[2] = aMater;
-//            mDatos[3] = espe;
-//            mDatos[4] = cedu;
+            txtConfir.setText(nomb + espacio + aPater + espacio + aMater
+                    + salto + espe + salto + cedu);
 
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Medicos.class.getName()).log(Level.SEVERE, null, ex);
         }
-    
-        
     }
-    
-    String nomb;
-//    public String getNombre() {
-//        return  nomb;
-//    }
-    
-    
 }
